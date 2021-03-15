@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { uuid } = require('uuidv4');
 
 
 const contactsPath = path.resolve("./db/contacts.json");
@@ -77,7 +78,7 @@ function addContact(name, email, phone) {
         const contacts = JSON.parse(data);
 
         contacts.push({
-            id: contacts.length + 1,
+            id: uuid(),
             name: name,
             email: email,
             phone: phone,
