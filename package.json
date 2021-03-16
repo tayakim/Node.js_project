@@ -19,6 +19,7 @@
     },
     "homepage": "https://github.com/tayakim/Node.js_project#readme",
     "dependencies": {
+        "uuid": "^8.3.2",
         "yargs": "^16.2.0"
     },
     "devDependencies": {
